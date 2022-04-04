@@ -30,11 +30,10 @@
                                     <action selector="changeName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67D-fy-XZp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvF-bT-0Pc">
-                                <rect key="frame" x="131" y="149" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvF-bT-0Pc">
+                                <rect key="frame" x="127" y="297" width="66" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Revert"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,8 +41,10 @@
                         <constraints>
                             <constraint firstItem="ojZ-9c-kfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C6c-IQ-0OW"/>
                             <constraint firstItem="cWL-dm-weh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uwz-kX-u5J"/>
+                            <constraint firstItem="gvF-bT-0Pc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5T-32-ruB"/>
                             <constraint firstItem="ojZ-9c-kfG" firstAttribute="top" secondItem="cWL-dm-weh" secondAttribute="bottom" constant="7.5" id="g2I-nZ-7BT"/>
                             <constraint firstItem="cWL-dm-weh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sYK-da-rI6"/>
+                            <constraint firstItem="gvF-bT-0Pc" firstAttribute="top" secondItem="ojZ-9c-kfG" secondAttribute="bottom" constant="8" symbolic="YES" id="y34-PD-yJV"/>
                         </constraints>
                     </view>
                     <connections>
