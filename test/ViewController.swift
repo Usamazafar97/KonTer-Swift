@@ -9,22 +9,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
+    
+    var totalCount = 0
+    @IBOutlet weak var count: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        count.font.pointSize
         // Do any additional setup after loading the view.
+        //viewwww.semanticContentAttribute = .forceRightToLeft
         
-        view.backgroundColor = UIColor.red
         
     }
-    @IBAction func changeName(_ sender: Any) {
-        
-        // name is changed
-        nameLabel.text = "#Gen-e"
-
-        // printing the change
-         print("name was changed to Gen-e")
+    
+    @IBAction func increment(_ sender: Any) {
+        if(totalCount >= 0){
+            totalCount += 1
+            count.text = String(totalCount)
+        }
+    }
+    
+    @IBAction func decrement(_ sender: Any) {
+        if(totalCount > 0){
+            totalCount -= 1
+            count.text = String(totalCount)
+        }
     }
 }
 
