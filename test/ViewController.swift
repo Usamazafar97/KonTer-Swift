@@ -43,6 +43,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func nextScreen(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView") as! ViewController2
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     @IBAction func start(_ sender: Any) {
         guard let start = textStart.text else { return }
         
@@ -55,7 +60,7 @@ class ViewController: UIViewController {
             
             
             // resetting the value to 0, once the user press the start button
-            textStart.text = "0"
+            //textStart.text = "0"
             
         }
     }

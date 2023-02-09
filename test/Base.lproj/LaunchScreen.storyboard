@@ -17,18 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLo-bE-MPo">
-                                <rect key="frame" x="114.66666666666669" y="408" width="164" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KonTer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLo-bE-MPo">
+                                <rect key="frame" x="153.66666666666666" y="408" width="85.666666666666657" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your goals Wisely..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxn-uX-iGP">
+                                <rect key="frame" x="0.0" y="459" width="393" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wxn-uX-iGP" secondAttribute="trailing" id="DP1-cM-WnY"/>
                             <constraint firstItem="PLo-bE-MPo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Wb4-we-FgU"/>
+                            <constraint firstItem="wxn-uX-iGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bXl-gu-711"/>
                             <constraint firstItem="PLo-bE-MPo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lci-6S-9HO"/>
+                            <constraint firstItem="wxn-uX-iGP" firstAttribute="top" secondItem="PLo-bE-MPo" secondAttribute="bottom" constant="15" id="vEF-d7-icH"/>
                         </constraints>
                     </view>
                 </viewController>
