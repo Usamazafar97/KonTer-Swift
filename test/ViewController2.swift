@@ -19,6 +19,8 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let nib = UINib(nibName: "customTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "customTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -65,9 +67,12 @@ extension ViewController2: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as! customTableViewCell
         
-        cell.textLabel?.text = names[indexPath.row]
+        cell.labelName.text = names[indexPath.row]
+        cell.imageName.backgroundColor = .red
+        
+//        cell.textLabel?.text = names[indexPath.row]
         
         return cell
     }
